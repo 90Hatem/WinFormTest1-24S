@@ -13,6 +13,26 @@ namespace WinFormTest1
             textBoxes[3] = textBox4;
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox2.Text;
+            textBox2.Text = textBox3.Text;
+            textBox3.Text = textBox4.Text;
+            textBox4.Text = textBox1.Text;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox4.Text;
+            textBox4.Text = textBox3.Text;
+            textBox3.Text = textBox2.Text;
+            textBox2.Text = textBox1.Text;
+        }
     }
 }
